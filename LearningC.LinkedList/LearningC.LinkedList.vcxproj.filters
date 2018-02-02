@@ -16,9 +16,6 @@
     <Filter Include="LinkedList">
       <UniqueIdentifier>{5be7d01d-e2ff-41b6-9409-cd6b2e1d3062}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Common">
-      <UniqueIdentifier>{5d252d62-6f2e-46a4-a81b-1b628d764b00}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -39,9 +36,6 @@
     <ClInclude Include="LinkedListTypes.h">
       <Filter>LinkedList</Filter>
     </ClInclude>
-    <ClInclude Include="CommonTest.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="test-linkedlist.h">
       <Filter>LinkedList</Filter>
     </ClInclude>
@@ -58,9 +52,6 @@
     </ClCompile>
     <ClCompile Include="Test.c">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommonTest.c">
-      <Filter>Common</Filter>
     </ClCompile>
     <ClCompile Include="linkedlist-create.c">
       <Filter>LinkedList</Filter>

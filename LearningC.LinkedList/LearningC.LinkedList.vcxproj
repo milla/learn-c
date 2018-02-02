@@ -20,11 +20,11 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C8F4F884-A671-4A18-9ADD-58EB782B6D69}</ProjectGuid>
+    <ProjectGuid>{65FE6212-8AF9-44D3-AE1E-3B25DEA2BE82}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MyC</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>LearningC</ProjectName>
+    <ProjectName>LearningC.LinkedList</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -151,7 +151,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CommonTest.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LinkedListTypes.h" />
     <ClInclude Include="stdafx.h" />
@@ -161,7 +160,6 @@
     <ClInclude Include="Types.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CommonTest.c" />
     <ClCompile Include="linkedlist-console.c" />
     <ClCompile Include="linkedlist-create.c" />
     <ClCompile Include="linkedlist-delete.c" />
