@@ -39,11 +39,11 @@
     <ClInclude Include="LinkedListTypes.h">
       <Filter>LinkedList</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedListTest.h">
-      <Filter>LinkedList</Filter>
-    </ClInclude>
     <ClInclude Include="CommonTest.h">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="test-linkedlist.h">
+      <Filter>LinkedList</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -56,14 +56,41 @@
     <ClCompile Include="LinkedList.c">
       <Filter>LinkedList</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedListTest.c">
-      <Filter>LinkedList</Filter>
-    </ClCompile>
     <ClCompile Include="Test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CommonTest.c">
       <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-create.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-insert.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-delete.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-query.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-console.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-merge.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-transform.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-interact.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist-split.c">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="test-linkedlist.c">
+      <Filter>LinkedList</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

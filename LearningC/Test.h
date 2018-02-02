@@ -1,5 +1,5 @@
 #pragma once
 #include "CommonTest.h"
-#include "LinkedListTest.h"
+#include "test-linkedlist.h"
 
 void test();
