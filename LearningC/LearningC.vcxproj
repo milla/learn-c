@@ -156,12 +156,21 @@
     <ClInclude Include="LinkedListTypes.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="LinkedListTest.h" />
+    <ClInclude Include="test-linkedlist.h" />
     <ClInclude Include="Test.h" />
     <ClInclude Include="Types.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommonTest.c" />
+    <ClCompile Include="linkedlist-console.c" />
+    <ClCompile Include="linkedlist-create.c" />
+    <ClCompile Include="linkedlist-delete.c" />
+    <ClCompile Include="linkedlist-insert.c" />
+    <ClCompile Include="linkedlist-interact.c" />
+    <ClCompile Include="linkedlist-merge.c" />
+    <ClCompile Include="linkedlist-query.c" />
+    <ClCompile Include="linkedlist-split.c" />
+    <ClCompile Include="linkedlist-transform.c" />
     <ClCompile Include="LinkedList.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="stdafx.cpp">
@@ -170,7 +179,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="LinkedListTest.c" />
+    <ClCompile Include="test-linkedlist.c" />
     <ClCompile Include="Test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

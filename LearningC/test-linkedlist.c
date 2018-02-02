@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "LinkedListTest.h"
+#include "test-linkedlist.h"
 
 void TestLinkedListMain() {
 	//TestLinkedList();
