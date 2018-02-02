@@ -1,5 +1,6 @@
 #include "LinkedList.h"
 
+void TestLinkedListMain();
 void TestLinkedList();
 LinkList test_create_list_into_tail();
 void TestTransformList();

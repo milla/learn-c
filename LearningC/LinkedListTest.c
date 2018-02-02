@@ -1,6 +1,24 @@
 #include "stdafx.h"
 #include "LinkedListTest.h"
 
+void TestLinkedListMain() {
+	//TestLinkedList();
+	//TestLinkedListDirect();
+	//TestSplitList();
+	//TestMergeList();
+	//TestTransformList();
+	//test_create_list_by_tail_from_input();
+	//TestTransformList();
+	//test_insert_at_tail();
+	//test_reverse_print_nohead();
+	//TestMergeList_nohaed();
+	//TestReverseList();
+	//TestRemoveDuplicates();
+	//TestFindMergeNode();
+	TestDiffSorted();
+	//TestSwitchNode();
+}
+
 void TestLinkedList() {
 	LinkList list1 = test_create_list_into_tail();
 	printf("after insert '1' at 1\n");
