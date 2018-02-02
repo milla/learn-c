@@ -1,0 +1,42 @@
+﻿  stdafx.cpp
+  test-linkedlist.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\test-linkedlist.c(25): warning C4013: 'insert_into_linkedlist' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\test-linkedlist.c(63): warning C4013: 'merge_sorted_linkedlist' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\test-linkedlist.c(63): warning C4047: 'initializing': 'LinkList' differs in levels of indirection from 'int'
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\test-linkedlist.c(122): warning C4013: 'MergeLists' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\test-linkedlist.c(122): warning C4047: 'initializing': 'LinkList' differs in levels of indirection from 'int'
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\test-linkedlist.c(179): warning C4020: 'createList': too many actual parameters
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\test-linkedlist.c(181): warning C4020: 'createList': too many actual parameters
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\test-linkedlist.c(215): warning C4020: 'createList': too many actual parameters
+  main.c
+  linkedlist-transform.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-transform.c(5): warning C4013: 'throw_exception' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-transform.c(27): warning C4013: 'exit' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-transform.c(76): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-transform.c(74): warning C4101: 'd': unreferenced local variable
+  linkedlist-split.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-split.c(9): warning C4013: 'throw_exception' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-split.c(10): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-split.c(18): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-split.c(13): warning C4101: 'data': unreferenced local variable
+  linkedlist-query.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-query.c(15): warning C4013: 'exit' undefined; assuming extern returning int
+  linkedlist-merge.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-merge.c(73): warning C4013: 'free' undefined; assuming extern returning int
+  linkedlist-interact.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-interact.c(7): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-interact.c(28): warning C4013: 'free' undefined; assuming extern returning int
+  linkedlist-insert.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-insert.c(15): warning C4013: 'exit' undefined; assuming extern returning int
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-insert.c(18): warning C4013: 'malloc' undefined; assuming extern returning int
+  linkedlist-delete.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-delete.c(18): warning C4013: 'free' undefined; assuming extern returning int
+  linkedlist-create.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-create.c(5): warning C4013: 'malloc' undefined; assuming extern returning int
+  linkedlist-console.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist-console.c(8): warning C4013: 'exit' undefined; assuming extern returning int
+  Test.c
+  LinkedList.c
+c:\users\shixun\source\repos\learn-c\learningc.linkedlist\linkedlist.c(7): warning C4013: 'exit' undefined; assuming extern returning int
+  Generating Code...
+  LearningC.LinkedList.vcxproj -> C:\Users\shixun\source\repos\learn-c\Debug\LearningC.LinkedList.exe
