@@ -6,16 +6,16 @@
     - 空间：静态分配，空间利用率100%（不考虑闲置节点）
 
 
-| 题目        | 链接    | 
+| Problem Title        | Links    | 
 | --------   | -----  | 
-| Insert Node at the end of a linked list | [Code](0-linkedlist-create.c) \| [Test](0-linkedlist-create-test.c)\| [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
+| Insert Node at the end of a linked list | [Code](0-linkedlist-create.c) \| [Test](0-linkedlist-create-test.c) \| [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
 | Insert Node at the begining of a linked list | [Code](0-linkedlist-create.c) \| [Test](0-linkedlist-create-test.c)  \| [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem)  | 
 | Insert Node at a given position in a linked list | [Code](0-linkedlist-create.c) \| [Test](0-linkedlist-create-test.c)  \| [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)   | 
 | Delete Node at a given position in a linked list | [Code](3-linkedlist-delete.c) \| [Test](3-linkedlist-delete-test.c)  \| [Problem]( https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem)   | 
-| Reverse a linked list and return pointer to the head | [Code](4-linkedlist-reverse.c)\| [Test](4-linkedlist-reverse-test.c)  \| [Problem](https://www.hackerrank.com/challenges/reverse-a-linked-list)    | 
+| Reverse a linked list and return pointer to the head | [Code](4-linkedlist-reverse.c) \| [Test](4-linkedlist-reverse-test.c)  \| [Problem](https://www.hackerrank.com/challenges/reverse-a-linked-list)    | 
 | Print elements of a linked list in reverse order as standard output | [Code](4-linkedlist-reverse.c) \| [Test](4-linkedlist-reverse-test.c) \| [Problem](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem) | 
 | Switch a node with its next | [Code](4-linkedlist-reverse.c)   \| [Test](4-linkedlist-reverse-test.c) \| Problem | 
-| Compare two linked lists A and B | [Code](4-linkedlist-reverse.c) \|[Test](4-linkedlist-reverse-test.c)\|  [Problem](https://www.hackerrank.com/challenges/compare-two-linked-lists/proble)| 
+| Compare two linked lists A and B | [Code](4-linkedlist-reverse.c) \| [Test](4-linkedlist-reverse-test.c) \|  [Problem](https://www.hackerrank.com/challenges/compare-two-linked-lists/proble)| 
 | Merge two sorted lists A and B as one linked list | [Code](6-linkedlist-merge.c) \| [Test](6-linkedlist-merge-test.c) \| [Problem](https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem)  | 
 | Get Nth element from the end in a linked list of integers | [Code](7-linkedlist-get.c) \| [Test](7-linkedlist-get-test.c) \| [Problem](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/problem)  | 
 | Get Nth element from the end in a linked list of integers | [Code](7-linkedlist-get.c) \| [Test](7-linkedlist-get-test.c) \| [Problem](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/problem)  | 
