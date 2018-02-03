@@ -12,6 +12,8 @@ void TestInsertAtTail() {
 	assert(GetNth(head, 0) == 1);
 	assert(GetLength(head) == len + 1);
 	assert(GetNth(head, len) == 30);
+
+	free(head);
 }
 
 void TestInsertAtHead() {
@@ -24,6 +26,8 @@ void TestInsertAtHead() {
 	assert(GetNth(head, 0) == 30);
 	assert(GetLength(head) == len + 1);
 	assert(GetNth(head, len) == 10);
+
+	free(head);
 }
 
 void TestInsertNth() {
@@ -42,4 +46,6 @@ void TestInsertNth() {
 	assert(GetNth(head, 0) == 30);
 	assert(GetLength(head) == len + 1);
 	assert(GetNth(head, len) == 50);
+
+	free(head);
 }

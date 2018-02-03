@@ -31,6 +31,9 @@ void TestFindMergeNode1() {
 
 	m = FindMergeNode1(head1, head2);
 	assert(m == 8);
+
+	free(head1);
+	free(head2);
 }
 void TestFindMergeNode2() {
 	int m = 0;
@@ -61,6 +64,9 @@ void TestFindMergeNode2() {
 
 	m = FindMergeNode2(head1, head2);
 	assert(m == 8);
+
+	free(head1);
+	free(head2);
 }
 void TestFindMergeNode3() {
 	int m = 0;
@@ -91,7 +97,11 @@ void TestFindMergeNode3() {
 
 	m = FindMergeNode3(head1, head2);
 	assert(m == 8);
+
+	free(head1);
+	free(head2);
 }
+
 void TestFindMergeNode4() {
 	int m = 0;
 
@@ -121,4 +131,7 @@ void TestFindMergeNode4() {
 
 	m = FindMergeNode4(head1, head2);
 	assert(m == 8);
+
+	free(head1);
+	free(head2);
 }

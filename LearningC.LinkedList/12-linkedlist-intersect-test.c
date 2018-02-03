@@ -62,4 +62,8 @@ void TestIntersect() {
 	assert(GetNth(ret, 0) == 4);
 	assert(GetNth(ret, 1) == 6);
 	assert(GetNth(ret, 2) == 12);
+
+	free(head1);
+	free(head2);
+	free(ret);
 }

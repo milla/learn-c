@@ -20,6 +20,8 @@ void TestRemoveDuplicates() {
 	assert(GetNth(head1, 1) == 3);
 	assert(GetNth(head1, 2) == 4);
 	assert(GetNth(head1, 3) < NullInt);
+
+	free(head1);
 }
 
 void TestRemoveDuplicates2() {
@@ -40,4 +42,6 @@ void TestRemoveDuplicates2() {
 	assert(GetNth(head1, 1) == 3);
 	assert(GetNth(head1, 2) == 4);
 	assert(GetNth(head1, 3) < NullInt);
+
+	free(head1);
 }

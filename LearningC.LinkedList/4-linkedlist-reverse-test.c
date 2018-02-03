@@ -12,6 +12,8 @@ void TestReversePrint() {
 
 	printf("ReversePrint NULL list:\n");
 	ReversePrint(NULL);
+
+	free(head);
 }
 
 void TestReverse() {
@@ -36,6 +38,8 @@ void TestReverse() {
 	printf("Reverse NULL list:\n");
 	head = Reverse(NULL);
 	Print(head);
+
+	free(head);
 }
 
 void TestReverseList() {
@@ -60,6 +64,8 @@ void TestReverseList() {
 	printf("Reverse NULL list:\n");
 	head = ReverseList(NULL);
 	Print(head);
+
+	free(head);
 }
 
 void TestSwitchNode() {
@@ -75,4 +81,6 @@ void TestSwitchNode() {
 	printf("\nSwitch the 4th node:\n");
 	head = SwitchNode(head, head->next->next->next);
 	Print(head);
+
+	free(head);
 }

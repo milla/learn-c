@@ -20,4 +20,5 @@ void TestDeleteNth() {
 	assert(GetNth(head, 3) == 5);
 	assert(GetLength(head) == len-1);
 
+	free(head);
 }

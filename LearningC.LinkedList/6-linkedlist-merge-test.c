@@ -31,6 +31,9 @@ void TestMergeLists() {
 
 	m = MergeLists(head1, head2);
 	assert(m == 8);
+
+	free(head1);
+	free(head2);
 }
 
 
@@ -63,4 +66,7 @@ void TestMergeTwoSorted() {
 
 	m = MergeLists(head1, head2);
 	assert(m == 8);
+
+	free(head1);
+	free(head2);
 }

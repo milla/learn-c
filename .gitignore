@@ -53,3 +53,6 @@ dkms.conf
 /LearningC/Debug
 /LearningC/x64/Debug
 /.vs
+/LearningC.Basics/Debug/LearningC.Basics.tlog
+/LearningC.Basics/Debug
+/LearningC.LinkedList/Debug

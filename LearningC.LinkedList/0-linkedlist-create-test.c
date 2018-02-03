@@ -19,6 +19,8 @@ void TestCreateByHead() {
 	assert(GetNth(head, 0) == 1);
 	assert(GetNth(head, 1) == 2);
 	assert(GetLength(head) == 2);
+
+	free(head);
 }
 
 void TestCreateByTailWithHead() {
@@ -35,6 +37,8 @@ void TestCreateByTailWithHead() {
 	assert(GetNth(head, 1) == 1);
 	assert(GetNth(head, 2) == 2);
 	assert(GetLength(head) == 3);
+
+	free(head);
 }
 
 void TestCreateByTail() {
@@ -52,4 +56,6 @@ void TestCreateByTail() {
 	assert(GetNth(head, 0) == 1);
 	assert(GetNth(head, 1) == 2);
 	assert(GetLength(head) == 2);
+
+	free(head);
 }

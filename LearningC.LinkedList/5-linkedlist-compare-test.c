@@ -16,4 +16,7 @@ void TestCompareLists() {
 
 	DeleteNth(head2, 3);
 	assert(CompareLists(head1, head2) == 0);
+
+	free(head1);
+	free(head2);
 }

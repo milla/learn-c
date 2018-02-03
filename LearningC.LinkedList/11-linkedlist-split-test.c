@@ -14,4 +14,7 @@ void TestSplitToEvenOdd() {
 
 	printf("head even list\n");
 	Print(head_even);
+
+	free(head);
+	free(head_even);
 }
