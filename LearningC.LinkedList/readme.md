@@ -7,8 +7,8 @@
 
 
 | 题目        | 链接    | 
-| --------   | -----:   | 
-| Insert Node at the end of a linked list        | [Code](0-linkedlist-create.c)	|   [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
+| --------   | -----  | 
+| Insert Node at the end of a linked list        | [Code](0-linkedlist-create.c) \|   [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
 | Insert Node at the end of a linked list        | [Code](0-linkedlist-create.c)	|   [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
 | Insert Node at the end of a linked list        | [Code](0-linkedlist-create.c)	|   [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
 | Insert Node at the end of a linked list        | [Code](0-linkedlist-create.c)	|   [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
