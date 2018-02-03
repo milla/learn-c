@@ -28,5 +28,5 @@ LinkList SplitToEvenOdd(LinkList head) {
 	}
 
 	bPtr->next = NULL;
-	return headb;
+	return headb->next;
 }
