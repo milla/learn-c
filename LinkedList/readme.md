@@ -20,7 +20,7 @@
 | Reverse a linked list and return pointer to the head | [Code](04-linkedlist-reverse.c) \| [Test](04-linkedlist-reverse-test.c)  \| [Problem](https://www.hackerrank.com/challenges/reverse-a-linked-list)    | 
 | Print elements of a linked list in reverse order as standard output | [Code](04-linkedlist-reverse.c) \| [Test](04-linkedlist-reverse-test.c) \| [Problem](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem) | 
 | Switch a node with its next | [Code](04-linkedlist-reverse.c)   \| [Test](04-linkedlist-reverse-test.c) \| Problem | 
-| Compare two linked lists A and B | [Code](04-linkedlist-reverse.c) \| [Test](04-linkedlist-reverse-test.c) \|  [Problem](https://www.hackerrank.com/challenges/compare-two-linked-lists/proble)| 
+| Compare two linked lists A and B | [Code](05-linkedlist-compare.c) \| [Test](05-linkedlist-compare-test.c) \|  [Problem](https://www.hackerrank.com/challenges/compare-two-linked-lists/proble)| 
 | Merge two sorted lists A and B as one linked list | [Code](06-linkedlist-merge.c) \| [Test](06-linkedlist-merge-test.c) \| [Problem](https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem)  | 
 | Get Nth element from the end in a linked list of integers | [Code](07-linkedlist-get.c) \| [Test](07-linkedlist-get-test.c) \| [Problem](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/problem)  | 
 | Get Nth element from the end in a linked list of integers | [Code](07-linkedlist-get.c) \| [Test](07-linkedlist-get-test.c) \| [Problem](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/problem)  | 
