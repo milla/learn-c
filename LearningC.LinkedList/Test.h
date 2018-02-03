@@ -1,4 +1,3 @@
-#pragma once
-#include "test-linkedlist.h"
+#include "LinkedList.h"
 
-void test();
+void Test();

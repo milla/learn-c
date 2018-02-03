@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -152,24 +152,42 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="LinkedList.h" />
-    <ClInclude Include="LinkedListTypes.h" />
+    <ClInclude Include="LinkedListTest.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="test-linkedlist.h" />
     <ClInclude Include="Test.h" />
     <ClInclude Include="Types.h" />
+    <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="linkedlist-console.c" />
-    <ClCompile Include="linkedlist-create.c" />
-    <ClCompile Include="linkedlist-delete.c" />
-    <ClCompile Include="linkedlist-insert.c" />
-    <ClCompile Include="linkedlist-interact.c" />
-    <ClCompile Include="linkedlist-merge.c" />
-    <ClCompile Include="linkedlist-query.c" />
-    <ClCompile Include="linkedlist-split.c" />
-    <ClCompile Include="linkedlist-transform.c" />
-    <ClCompile Include="LinkedList.c" />
+    <ClCompile Include="0-linkedlist-create-test.c" />
+    <ClCompile Include="1-linkedlist-print-test.c" />
+    <ClCompile Include="1-linkedlist-print.c" />
+    <ClCompile Include="10-linkedlist-find-merge-point-test.c" />
+    <ClCompile Include="11-linkedlist-split-test.c" />
+    <ClCompile Include="12-linkedlist-intersect-test.c" />
+    <ClCompile Include="13-linkedlist-diff-test.c" />
+    <ClCompile Include="13-linkedlist-diff.c" />
+    <ClCompile Include="2-linkedlist-insert-test.c" />
+    <ClCompile Include="2-linkedlist-insert.c" />
+    <ClCompile Include="3-linkedlist-delete-test.c" />
+    <ClCompile Include="3-linkedlist-delete.c" />
+    <ClCompile Include="4-linkedlist-reverse-test.c" />
+    <ClCompile Include="4-linkedlist-reverse.c" />
+    <ClCompile Include="5-linkedlist-compare-test.c" />
+    <ClCompile Include="6-linkedlist-merge-test.c" />
+    <ClCompile Include="6-linkedlist-merge.c" />
+    <ClCompile Include="7-linkedlist-get-test.c" />
+    <ClCompile Include="8-linkedlist-distinct-test.c" />
+    <ClCompile Include="9-linkedlist-cycle-detection-test.c" />
+    <ClCompile Include="9-linkedlist-cycle-detection.c" />
+    <ClCompile Include="10-linkedlist-find-merge-point.c" />
+    <ClCompile Include="8-linkedlist-distinct.c" />
+    <ClCompile Include="7-linkedlist-get.c" />
+    <ClCompile Include="5-linkedlist-compare.c" />
+    <ClCompile Include="0-linkedlist-create.c" />
+    <ClCompile Include="12-linkedlist-intersect.c" />
+    <ClCompile Include="11-linkedlist-split.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -177,8 +195,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="test-linkedlist.c" />
     <ClCompile Include="Test.c" />
+    <ClCompile Include="Util.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
