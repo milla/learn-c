@@ -17,7 +17,7 @@ void Print(LinkList head) {
 	Node *p;
 	if (head == NULL) {
 		printf("wrong input, or error");
-		exit(1);
+		return;
 	}
 
 	// check whether contains head node

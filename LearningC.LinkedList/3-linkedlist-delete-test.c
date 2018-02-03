@@ -13,11 +13,11 @@ void TestDeleteNth() {
 
 	len--;
 	head = DeleteNth(head, 50);
-	assert(GetNth(head, len) == 11);
+	assert(GetNth(head, len-1) == 11);
 	assert(GetLength(head) == len);
 
 	head = DeleteNth(head, 3);
-	assert(GetNth(head, 3) == 5);
+	assert(GetNth(head, 3) == 6);
 	assert(GetLength(head) == len-1);
 
 	free(head);

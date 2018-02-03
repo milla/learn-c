@@ -2,6 +2,8 @@
 #include "LinkedList.h"
 
 Node * Diff(Node *heada, Node *headb) {
+	if (!headb || !heada) return heada;
+
 	Node *pa, *dummy, *p, *pb;
 	pa = heada; pb = headb;
 	dummy = (Node*)malloc(sizeof(Node));

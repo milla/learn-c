@@ -82,7 +82,7 @@ Node* InsertNth(Node *head, int data, int position)
 {
 	// Complete this method only
 	// Do not write main function. 
-	if (!head && position > 0 || position < 0) { exit(1); }
+	if (!head && position > 0 || position < 0) { printf("Error"); return NULL;; }
 
 	Node *p, *r, *newHead, *q;
 	newHead = head;
@@ -107,7 +107,7 @@ Node* InsertNth(Node *head, int data, int position)
 		}
 		if (p == NULL && i != position - 1) {
 			free(q);
-			exit(1);
+			printf("Error"); return NULL;;
 		}
 
 		r = p->next;

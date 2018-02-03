@@ -27,13 +27,13 @@ Node* DeleteNth(Node *head, int position)
 		free(head);
 	}
 	else {
-		while (p && i<position) {
+		while (p && i < position) {
 			r = p;
 			p = p->next;
 			i++;
 		}
 
-		if (!p) { exit(1); }
+		if (!p) { printf("Error"); return head; }
 
 		r->next = p->next;
 		free(p);

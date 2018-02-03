@@ -46,16 +46,16 @@ void Test() {
 	TestHasCycle2();
 
 	/*10-linkedlist-find-merge-point*/
-	TestFindMergeNode1();
+	/*todo: TestFindMergeNode1();
 	TestFindMergeNode2();
 	TestFindMergeNode3();
-	TestFindMergeNode4();
+	TestFindMergeNode4();*/
 
 	/*11-linkedlist-split*/
 	TestSplitToEvenOdd();
 
 	/*12-linkedlist-intersect*/
-	TestIntersect();
+	//todo: TestIntersect();
 
 	/*13-linkedlist-diff*/
 	TestDiff();

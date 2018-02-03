@@ -9,7 +9,7 @@ void TestRemoveDuplicates() {
 	head1 = RemoveDuplicates(head1);
 
 	assert(GetNth(head1, 0) == 3);
-	assert(GetNth(head1, 1) < NullInt);
+	assert(GetLength(head1) == 1);
 
 	// case 2
 	int b1[] = { 2,3,3,4 };
@@ -19,7 +19,7 @@ void TestRemoveDuplicates() {
 	assert(GetNth(head1, 0) == 2);
 	assert(GetNth(head1, 1) == 3);
 	assert(GetNth(head1, 2) == 4);
-	assert(GetNth(head1, 3) < NullInt);
+	assert(GetLength(head1) == 3);
 
 	free(head1);
 }
@@ -31,7 +31,7 @@ void TestRemoveDuplicates2() {
 	head1 = RemoveDuplicates2(head1);
 
 	assert(GetNth(head1, 0) == 3);
-	assert(GetNth(head1, 1) < NullInt);
+	assert(GetLength(head1) == 1);
 
 	// case 2
 	int b1[] = { 2,3,3,4 };
@@ -41,7 +41,7 @@ void TestRemoveDuplicates2() {
 	assert(GetNth(head1, 0) == 2);
 	assert(GetNth(head1, 1) == 3);
 	assert(GetNth(head1, 2) == 4);
-	assert(GetNth(head1, 3) < NullInt);
+	assert(GetLength(head1) == 3);
 
 	free(head1);
 }

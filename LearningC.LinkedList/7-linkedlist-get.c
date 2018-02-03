@@ -19,7 +19,10 @@ int GetNthFromTail(Node *head, int positionFromTail)
 
 	// This is a "method-only" submission. 
 	// You only need to complete this method. 
-	if (positionFromTail < 0 || !head) { exit(1); }
+	if (positionFromTail < 0 || !head) {
+		printf("Error");
+		return NULL;
+	}
 	Node *rear, *p;
 	rear = p = head;
 	int ret;
@@ -31,7 +34,7 @@ int GetNthFromTail(Node *head, int positionFromTail)
 		count++;
 	}
 	// exceed
-	if (positionFromTail >= count) { exit(1); }
+	if (positionFromTail >= count) { printf("Error"); return NULL; }
 	else if (positionFromTail == 0) { ret = rear->data; }
 	else if (positionFromTail == count - 1) { ret = head->data; }
 	else {
@@ -49,12 +52,14 @@ int GetNthFromTail(Node *head, int positionFromTail)
 int GetLength(Node *head)
 {
 	if (!head) return 0;
+	Node *p;
+	p = head;
 
 	int length = 0;
 
-	while (head) {
+	while (p) {
 		length++;
-		head = head->next;
+		p = p->next;
 	}
 	return length;
 }
@@ -63,16 +68,14 @@ int GetNth(Node *head, int position)
 {
 	if (!head) return NULL;
 	int j = 0;
-	Node *n = head;
-	n = NULL;
+	Node *p;
+	Node *n;
+	p = head;
 
-	while (head && j <= position) {
-		if (j == position)
-			n = head;
-
-		head = head->next;
+	while (p && j < position) {
+		p = p->next;
 		j++;
 	}
 
-	return n ? n->data : NullInt;
+	return p ? p->data : NullInt;
 }
