@@ -1,15 +1,22 @@
 # C语言及数据结构学习
-- [Scope](#scope)
-- [Content](#content)
-- [Problems](#problems)
-- [Courses](#courses)
-- [Links](#links)
 
----
+
+   - [Scope](#scope)
+   - [Content](#content)
+   - [Problems](#problems)
+   - [Courses](#courses)
+   - [Links](#links)
+
+
 ### Scope:
 
 - Data structure
 - Basic Clang knowledge
+
+
+### Content
+ 
+ - [Linked List](LinkedList/readme.md)
 
 
 ### Problems:
@@ -36,12 +43,7 @@
 - [C Programming Notes, by Steve Summit](http://www.eskimo.com/~scs/cclass/notes/top.html)
 
 
-### Content
- 
- - [Linked List](LinkedList/readme.md)
-
-
-### 开发工具
+### IDE
 
   - Visual Studio 2017, on Windows 10  
   - ___ on MacOS
