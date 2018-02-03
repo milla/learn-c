@@ -8,27 +8,10 @@
 
 | 题目        | 链接    | 
 | --------   | -----  | 
-| Insert Node at the end of a linked list | 
-[Code](0-linkedlist-create.c) \| 
-[Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
-
-| Insert Node at the begining of a linked list | 
-[Code](0-linkedlist-create.c) \| 
-[Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem)   | 
-
-| Insert Node at a given position in a linked list | 
-[Code](0-linkedlist-create.c) \| 
-[Problem](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)   | 
-
-| Delete Node at a given position in a linked list | 
-[Code](3-linkedlist-delete.c) \| 
-[Problem]( https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem)   | 
-
-| Reverse a linked list and return pointer to the head | 
-[Code](4-linkedlist-reverse) \| 
-[Problem](https://www.hackerrank.com/challenges/reverse-a-linked-list)   | 
-
-| Print elements of a linked list in reverse order as standard output | 
-[Code](4-linkedlist-reverse) \| 
-[Problem](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem)   | 
+| Insert Node at the end of a linked list | [Code](0-linkedlist-create.c) \| [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem)   | 
+| Insert Node at the begining of a linked list | [Code](0-linkedlist-create.c) \| [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem)   | 
+| Insert Node at a given position in a linked list | [Code](0-linkedlist-create.c) \| [Problem](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)   | 
+| Delete Node at a given position in a linked list | [Code](3-linkedlist-delete.c) \| [Problem]( https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem)   | 
+| Reverse a linked list and return pointer to the head | [Code](4-linkedlist-reverse) \| [Problem](https://www.hackerrank.com/challenges/reverse-a-linked-list)   | 
+| Print elements of a linked list in reverse order as standard output | [Code](4-linkedlist-reverse) \| [Problem](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem)   | 
 
