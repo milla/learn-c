@@ -139,7 +139,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Xsd Include="linkedlist-index.md">
+    <Xsd Include="readme.md">
       <Filter>Header Files</Filter>
     </Xsd>
   </ItemGroup>

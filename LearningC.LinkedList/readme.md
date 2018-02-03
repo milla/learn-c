@@ -1,6 +1,5 @@
 ## Linked List
 
-----
 ### Comparations between Linked List and Sequential List. 
 
 #### 链表：
@@ -10,7 +9,7 @@
     - 时间：随机存取，每个item的存取时间复杂度为O(1)，适合大量存取操作
     - 空间：静态分配，空间利用率100%（不考虑闲置节点）
 
-### Code Files Index
+### 代码文件说明 Code Files Index
 
 | Problem Title        | Links    | 
 | --------   | -----  | 
