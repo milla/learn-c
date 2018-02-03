@@ -199,7 +199,7 @@
     <ClCompile Include="Util.c" />
   </ItemGroup>
   <ItemGroup>
-    <Xsd Include="readme.md">
+    <Xsd Include="linkedlist-index.md">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
