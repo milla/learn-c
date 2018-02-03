@@ -1,6 +1,3 @@
-# learn-c
-
-Learn C
 C语言及数据结构学习
 
 ### IDE:
