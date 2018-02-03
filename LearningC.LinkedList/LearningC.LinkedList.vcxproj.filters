@@ -138,4 +138,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="readme.md">
+      <Filter>Header Files</Filter>
+    </Xsd>
+  </ItemGroup>
 </Project>
