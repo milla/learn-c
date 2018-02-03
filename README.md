@@ -1,9 +1,8 @@
-# learn-c
-
-Learn C
+C语言及数据结构学习
 
 ### IDE:
-Visual Studio 2017
+1. Visual Studio 2017, on Windows 10
+2. ___ on MacOS
 
 ### Scope:
 1. Data structure
