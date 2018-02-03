@@ -13,8 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="LinkedList">
-      <UniqueIdentifier>{5be7d01d-e2ff-41b6-9409-cd6b2e1d3062}</UniqueIdentifier>
+    <Filter Include="Test">
+      <UniqueIdentifier>{b34dc4b1-86e0-427a-990e-8777d0021bc0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,9 +27,6 @@
     <ClInclude Include="Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList.h">
-      <Filter>LinkedList</Filter>
-    </ClInclude>
     <ClInclude Include="LinkedListTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -37,6 +34,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,64 +50,19 @@
     <ClCompile Include="Test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="1-linkedlist-print.c">
-      <Filter>LinkedList</Filter>
-    </ClCompile>
     <ClCompile Include="2-linkedlist-insert.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="0-linkedlist-create-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="1-linkedlist-print-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="10-linkedlist-find-merge-point-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="11-linkedlist-split-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="12-linkedlist-intersect-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="13-linkedlist-diff-test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="13-linkedlist-diff.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2-linkedlist-insert-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="3-linkedlist-delete-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="3-linkedlist-delete.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="4-linkedlist-reverse-test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="4-linkedlist-reverse.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="5-linkedlist-compare-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="6-linkedlist-merge-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="6-linkedlist-merge.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="7-linkedlist-get-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="8-linkedlist-distinct-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="9-linkedlist-cycle-detection-test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="9-linkedlist-cycle-detection.c">
@@ -135,6 +90,51 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0-linkedlist-create-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="1-linkedlist-print-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2-linkedlist-insert-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3-linkedlist-delete-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="4-linkedlist-reverse-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="5-linkedlist-compare-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6-linkedlist-merge-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7-linkedlist-get-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="8-linkedlist-distinct-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9-linkedlist-cycle-detection-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10-linkedlist-find-merge-point-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="11-linkedlist-split-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="12-linkedlist-intersect-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="13-linkedlist-diff-test.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="1-linkedlist-print.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
