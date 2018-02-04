@@ -52,17 +52,19 @@ bool HasCycle2(Node* head) {
 
 	Node *dummy = (Node*)malloc(sizeof(Node));
 	Node *t = head;
+	Node *p = head;
 	bool ret = false;
+	
 
-	while (head && head->next) {
-		if (head->next == dummy) {
+	while (p && p->next) {
+		if (p->next == dummy) {
 			ret = true;
 			break;
 		}
-		t = head->next;
-		head->next = dummy;
+		t = p->next;
+		p->next = dummy;
 
-		head = t;
+		p = t;
 	}
 
 	return ret;

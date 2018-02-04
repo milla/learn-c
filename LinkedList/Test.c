@@ -9,6 +9,7 @@ void Test() {
 	TestCreateByHead();
 	TestCreateByTailWithHead();
 	TestCreateByTail();
+	TestCreateCycleListByTail();
 
 	/*1-linkedlist-print*/
 	TestPrint();
@@ -32,6 +33,7 @@ void Test() {
 
 	/*6-linkedlist-merge*/
 	TestMergeLists();
+	TestMergeLists2();
 	TestMergeTwoSorted();
 
 	/*7-linkedlist-get*/
@@ -46,16 +48,16 @@ void Test() {
 	TestHasCycle2();
 
 	/*10-linkedlist-find-merge-point*/
-	/*todo: TestFindMergeNode1();
+	TestFindMergeNode1();
 	TestFindMergeNode2();
 	TestFindMergeNode3();
-	TestFindMergeNode4();*/
-
+	TestFindMergeNode4();
+	
 	/*11-linkedlist-split*/
 	TestSplitToEvenOdd();
 
 	/*12-linkedlist-intersect*/
-	//todo: TestIntersect();
+	TestIntersect();
 
 	/*13-linkedlist-diff*/
 	TestDiff();

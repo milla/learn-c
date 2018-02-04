@@ -5,6 +5,7 @@ void TestCreateByTailConsole();
 void TestCreateByHead();
 void TestCreateByTailWithHead();
 void TestCreateByTail();
+void TestCreateCycleListByTail();
 
 /*1-linkedlist-print*/
 void TestPrint();
@@ -28,6 +29,7 @@ void TestCompareLists();
 
 /*6-linkedlist-merge*/
 void TestMergeLists();
+void TestMergeLists2();
 void TestMergeTwoSorted();
 
 /*7-linkedlist-get*/
@@ -57,15 +59,3 @@ void TestIntersect();
 
 /*13-linkedlist-diff*/
 void TestDiff();
-
-
-
-void TestLinkedListMain();
-void TestLinkedList();
-LinkList test_create_list_into_tail();
-void TestTransformList();
-void TestRemoveDuplicates();
-void TestFindMergeNode();
-void TestDiffSorted();
-void TestSwitchNode();
-LinkList createList(int data[]);

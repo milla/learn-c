@@ -85,3 +85,21 @@ LinkList CreateByTail(int input[], int len) {
 	return head;
 }
 
+LinkList CreateCycleListByTail(int input[], int len) {
+	Node *head, *p, *r;
+	head = (Node *)malloc(sizeof(Node));
+	head->data = input[0];
+	head->next = NULL;
+	r = head;
+	int i = 0;
+
+	for (i = 1;i < len;i++) {
+		p = (Node *)malloc(sizeof(Node));
+		p->data = input[i];
+		r->next = p;
+		r = p;
+	}
+	r->next = head;
+	return head;
+}
+

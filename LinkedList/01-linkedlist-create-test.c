@@ -59,3 +59,23 @@ void TestCreateByTail() {
 
 	free(head);
 }
+
+void TestCreateCycleListByTail(){
+	int data[] = { 1 };
+	LinkList head = CreateCycleListByTail(data, sizeof(data) / IntSize);
+
+	assert(GetNth(head, 0) == 1);
+	assert(GetNth(head, 1) == 1);
+
+	// case2
+
+	int data2[] = { 1, 2 };
+	head = CreateCycleListByTail(data2, sizeof(data2) / IntSize);
+
+	assert(GetNth(head, 0) == 1);
+	assert(GetNth(head, 1) == 2);
+	assert(GetNth(head, 2) == 1);
+	assert(GetNth(head, 3) == 2);
+
+	free(head);
+}

@@ -57,25 +57,40 @@ Node* MergeLists(Node *headA, Node* headB)
 
 // merge two sorted singly linked list
 LinkList MergeTwoSorted(LinkList heada, LinkList headb) {
-	LinkList head = heada;
-	Node *headPtr = head;
 	Node *aPtr, *bPtr;
 	aPtr = heada;
 	bPtr = headb;
+	Node *dummy;
+	Node *p;
+	p = dummy = (Node*)malloc(sizeof(Node));
 	
 	while (aPtr != NULL && bPtr != NULL) {
 		if (aPtr->data <= bPtr->data) {
-			headPtr->next = aPtr;
-			headPtr = headPtr->next;
+			p->next = aPtr;
+			p = p->next;
 			aPtr = aPtr->next;
 		}
 		else {
-			headPtr->next = bPtr;
-			headPtr = headPtr->next; 
+			p->next = bPtr;
+			p = p->next; 
 			bPtr = bPtr->next;
 		}
 	}
-	headPtr->next = aPtr == NULL ? bPtr : aPtr;
-	free(headb); // headPtr uese heada's head node, so we can free headb
-	return head;
+	p->next = aPtr == NULL ? bPtr : aPtr;
+	return dummy->next;
+}
+
+Node* MergeLists2(Node* l1, Node* l2) {
+	// recursive runs at call stack, much quicker than heap (esp., for C#, java)
+	if (!l1) return l2;
+	if (!l2) return l1;
+
+	if (l1->data <= l2->data) {
+		l1->next = MergeLists2(l1->next, l2);
+		return l1;
+	}
+	else {
+		l2->next = MergeLists2(l1, l2->next);
+		return l2;
+	}
 }

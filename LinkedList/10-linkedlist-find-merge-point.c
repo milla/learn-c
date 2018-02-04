@@ -15,15 +15,20 @@ Node* next;
 int FindMergeNode1(Node *headA, Node *headB)
 {
 	// Complete this function
-	// Do not write the main method. Node *pa, *pat, *pb, *pbt; 
+	// Do not write the main method. Node *pa, *pat, *pb, *pbt;
 	Node *pa, *pb, *pat, *pbt;
 	pa = pat = headA;
 	pb = pbt = headB;
 	int ta = 0;
 	int tb = 0;
-	Node *meet = headA; meet = NULL;
+	Node *meet = headA;
+	meet = NULL;
 
 	while (pa || pb) {
+		if (pa->data == pb->data) {
+			meet = pa;
+			break;
+		}
 		if (pa->next) {
 			pa = pa->next;
 			ta++;
@@ -31,10 +36,6 @@ int FindMergeNode1(Node *headA, Node *headB)
 		if (pb->next) {
 			pb = pb->next;
 			tb++;
-		}
-		if (pa->data == pb->data) {
-			meet = pa;
-			break;
 		}
 	}
 
@@ -74,15 +75,20 @@ Node* next;
 int FindMergeNode2(Node *headA, Node *headB)
 {
 	// Complete this function
-	// Do not write the main method. Node *pa, *pat, *pb, *pbt; 
+	// Do not write the main method. Node *pa, *pat, *pb, *pbt;
 	Node *pa, *pb, *pat, *pbt;
 	pa = pat = headA;
 	pb = pbt = headB;
 	int ta = 0;
 	int tb = 0;
-	Node *meet = headA; meet = NULL;
+	Node *meet = headA;
+	meet = NULL;
 
 	while (pa || pb) {
+		if (pa->data == pb->data) {
+			meet = pa;
+			break;
+		}
 		if (pa->next) {
 			pa = pa->next;
 			ta++;
@@ -90,10 +96,6 @@ int FindMergeNode2(Node *headA, Node *headB)
 		if (pb->next) {
 			pb = pb->next;
 			tb++;
-		}
-		if (pa->data == pb->data) {
-			meet = pa;
-			break;
 		}
 	}
 
@@ -130,58 +132,65 @@ Node* next;
 }
 */
 
-// use moving steps which should be the same if a+b = b+a, 
+// pointer-a walks thru list-a, and then walks from head of list-b
+// pointer-b walks thru list-b, and then walks from head of list-a
+// can get merge point when the two points meet
+// use moving steps which should be the same if a+b = b+a,
 int FindMergeNode3(Node *headA, Node *headB)
 {
 	// Complete this function
-	// Do not write the main method. 
+	// Do not write the main method.
+	if (!headB) return headA ? headA->data : NULL;
+	if (!headA) return headB ? headB->data : NULL;
+
 	Node *pa, *pat, *pb, *pbt;
 	pa = pat = headA;
 	pb = pbt = headB;
-	int ta = 0;
-	int tb = 0;
 	Node *meet = (Node*)malloc(sizeof(Node));
 
-	while (pa || pb) {
+	while (pa || pb) {	
+		if (pa && pb && pa->data == pb->data) {
+			meet = pa;
+			break;
+		}
+		
+		// pointer-a walks thru list-a
 		if (pa->next) {
 			pa = pa->next;
-			ta++;
-		}
-		else {
+		} else {
+			// if done, go from the head of list-b
 			pa = pbt;
 			pbt = pbt->next;
 		}
+
+		// pointer-b walks thru list-b
 		if (pb->next) {
 			pb = pb->next;
-			tb++;
-		}
-		else {
+		} else {
+			// if done, go from the head of list-a
 			pb = pat;
 			pat = pat->next;
 		}
 
-		if (pa->data == pb->data) {
-			meet = pa;
-			break;
-		}
 	}
 
 	return meet->data;
 }
 
 /*
-Find merge point of two linked lists
-Node is defined as
-struct Node
-{
-int data;
-Node* next;
-}
+Change list-a node's next to a dummy node, 
+loop list-b, when any node's next points to the dummy node,
+the crossing point found. 
+
+but this requires the merging point should be same object reference, but not value. 
 */
 int FindMergeNode4(Node *headA, Node *headB)
 {
 	// Complete this function
-	// Do not write the main method. 
+	// Do not write the main method.
+	if (!headB) return headA ? headA->data : NULL;
+	if (!headA) return headB ? headB->data : NULL;
+		
 	int ret = 0;
 	Node *dummy = (Node*)malloc(sizeof(Node));
 	Node *t = headA;

@@ -8,7 +8,7 @@ Node * Intersect(Node *heada, Node *headb) {
 	dummy = (Node*)malloc(sizeof(Node));
 	p = dummy;
 
-	while (pa && pb && pa->next) {
+	while (pa && pb) {
 		if (pa->data == pb->data) {
 			p->next = pa;
 			p = p->next;
@@ -18,14 +18,13 @@ Node * Intersect(Node *heada, Node *headb) {
 		}
 		else if (pa->data > pb->data) {
 			pb = pb->next;
-			pa = pa->next;
 		}
 		else {
-			p = p->next;
 			pa = pa->next;
 		}
 	}
 
+	p->next	= NULL;
 	Node *f = dummy->next;
 	dummy->next = NULL;
 	free(dummy);

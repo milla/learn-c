@@ -7,6 +7,7 @@ LinkList CreateByTailConsole();
 LinkList CreateByHead(int data[], int len);
 LinkList CreateByTailWithHead(int input[], int len);
 LinkList CreateByTail(int input[], int len);
+LinkList CreateCycleListByTail(int input[], int len);
 
 /*1-linkedlist-print*/
 void Print(LinkList head);
@@ -30,6 +31,7 @@ int CompareLists(Node *headA, Node* headB);
 
 /*6-linkedlist-merge*/
 Node* MergeLists(Node *headA, Node* headB);
+Node* MergeLists2(Node *headA, Node* headB);
 LinkList MergeTwoSorted(LinkList heada, LinkList headb);
 
 /*7-linkedlist-get*/
