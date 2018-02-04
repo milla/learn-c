@@ -1,4 +1,4 @@
-﻿// https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem
+// https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem
 
 #include "stdafx.h"
 #include "LinkedList.h"
@@ -55,7 +55,6 @@ Node* MergeLists(Node *headA, Node* headB)
 	return newHead;
 }
 
-// 自考书籍，p55, 例2.6，将两个有序链接，合并为一个
 // merge two sorted singly linked list
 LinkList MergeTwoSorted(LinkList heada, LinkList headb) {
 	LinkList head = heada;
@@ -63,12 +62,7 @@ LinkList MergeTwoSorted(LinkList heada, LinkList headb) {
 	Node *aPtr, *bPtr;
 	aPtr = heada;
 	bPtr = headb;
-	aPtr = aPtr->next;
-	bPtr = bPtr->next;
-
-	// 将B表merge到A表，遍历两个表去找更小的值插入进去
-	// while有个很好的用处，就是可以一直循环，直到结束，其中的逻辑不限定是几个数组或链表对象
-
+	
 	while (aPtr != NULL && bPtr != NULL) {
 		if (aPtr->data <= bPtr->data) {
 			headPtr->next = aPtr;
@@ -77,7 +71,7 @@ LinkList MergeTwoSorted(LinkList heada, LinkList headb) {
 		}
 		else {
 			headPtr->next = bPtr;
-			headPtr = headPtr->next; // 注意这个指针也要后移一格，越来越清楚了，果然是要刷题！
+			headPtr = headPtr->next; 
 			bPtr = bPtr->next;
 		}
 	}

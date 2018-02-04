@@ -1,9 +1,9 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 #include "LinkedList.h"
 
 // 自考数据结构书，p55, 例2.5，将一个数字的list，奇数一个链表，偶数一个链表
 // split a linked list to two list, 
-// one should contain all even numbers,
+// one should contain all even numbers, 
 // another should all odd
 LinkList SplitToEvenOdd(LinkList head) {
 	LinkList headb; // even list

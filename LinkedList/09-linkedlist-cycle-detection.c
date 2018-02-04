@@ -1,4 +1,4 @@
-﻿// https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem
+// https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem
 
 #include "stdafx.h"
 #include "LinkedList.h"

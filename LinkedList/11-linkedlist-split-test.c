@@ -1,9 +1,9 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 #include "LinkedList.h"
 #include <assert.h>
 
 void TestSplitToEvenOdd() {
-	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	LinkList head = CreateByHead(arr, sizeof(arr) / IntSize);
 	LinkList head_even = SplitToEvenOdd(head);
 

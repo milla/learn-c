@@ -15,7 +15,7 @@ Node* next;
 int FindMergeNode1(Node *headA, Node *headB)
 {
 	// Complete this function
-	// Do not write the main method. Node *pa,*pat, *pb,*pbt; 
+	// Do not write the main method. Node *pa, *pat, *pb, *pbt; 
 	Node *pa, *pb, *pat, *pbt;
 	pa = pat = headA;
 	pb = pbt = headB;
@@ -74,7 +74,7 @@ Node* next;
 int FindMergeNode2(Node *headA, Node *headB)
 {
 	// Complete this function
-	// Do not write the main method. Node *pa,*pat, *pb,*pbt; 
+	// Do not write the main method. Node *pa, *pat, *pb, *pbt; 
 	Node *pa, *pb, *pat, *pbt;
 	pa = pat = headA;
 	pb = pbt = headB;
@@ -130,7 +130,7 @@ Node* next;
 }
 */
 
-// use moving steps which should be the same if a+b = b+a,
+// use moving steps which should be the same if a+b = b+a, 
 int FindMergeNode3(Node *headA, Node *headB)
 {
 	// Complete this function

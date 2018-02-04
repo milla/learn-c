@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 #include "LinkedList.h"
 #include <assert.h>
 
@@ -13,7 +13,7 @@ void TestCreateByHead() {
 	assert(GetLength(head) == 1);
 
 	// case2
-	int data2[] = { 1,2 };
+	int data2[] = { 1, 2 };
 	head = CreateByHead(data2, sizeof(data2) / IntSize);
 
 	assert(GetNth(head, 0) == 1);
@@ -31,7 +31,7 @@ void TestCreateByTailWithHead() {
 	assert(GetLength(head) == 2);
 
 	// case2
-	int data2[] = { 1,2 };
+	int data2[] = { 1, 2 };
 	head = CreateByTailWithHead(data2, sizeof(data2) / IntSize);
 
 	assert(GetNth(head, 1) == 1);
@@ -50,7 +50,7 @@ void TestCreateByTail() {
 
 	// case2
 
-	int data2[] = { 1,2 };
+	int data2[] = { 1, 2 };
 	head = CreateByTail(data2, sizeof(data2) / IntSize);
 
 	assert(GetNth(head, 0) == 1);

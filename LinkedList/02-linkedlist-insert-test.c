@@ -3,7 +3,7 @@
 #include <assert.h>
 
 void TestInsertAtTail() {
-	int data[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int data[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int len = sizeof(data) / IntSize;
 	LinkList head = CreateByTail(data, len);
 
@@ -17,7 +17,7 @@ void TestInsertAtTail() {
 }
 
 void TestInsertAtHead() {
-	int data[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int data[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int len = sizeof(data) / IntSize;
 	LinkList head = CreateByTail(data, len);
 
@@ -31,7 +31,7 @@ void TestInsertAtHead() {
 }
 
 void TestInsertNth() {
-	int data[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int data[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int len = sizeof(data) / IntSize;
 	LinkList head = CreateByTail(data, len);
 	head = InsertNth(head, 30, 0);

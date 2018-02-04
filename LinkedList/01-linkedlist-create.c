@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 #include "LinkedList.h"
 
 /*
@@ -28,8 +28,9 @@ LinkList CreateByHead(int data[], int len) {
 	Node *p, *r;
 	p = head;
 	r = head;
-
-	for (int i = 0;i < len;i++) {
+	int i = 0;
+	
+	for (i = 0;i < len;i++) {
 		p = (Node *)malloc(sizeof(Node));
 		p->data = data[i];
 		r->next = p;
@@ -54,8 +55,9 @@ LinkList CreateByTailWithHead(int input[], int len) {
 	Node *head, *p, *r;
 	head = (Node *)malloc(sizeof(Node));
 	r = head;
+	int i = 0;
 
-	for (int i = 0;i < len;i++) {
+	for (i = 0;i < len;i++) {
 		p = (Node *)malloc(sizeof(Node));
 		p->data = input[i];
 		r->next = p;
@@ -71,8 +73,9 @@ LinkList CreateByTail(int input[], int len) {
 	head->data = input[0];
 	head->next = NULL;
 	r = head;
+	int i = 0;
 
-	for (int i = 1;i < len;i++) {
+	for (i = 1;i < len;i++) {
 		p = (Node *)malloc(sizeof(Node));
 		p->data = input[i];
 		r->next = p;

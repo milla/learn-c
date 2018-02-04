@@ -1,0 +1,121 @@
+# Project: LinkedList
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = 01-linkedlist-create.o 01-linkedlist-create-test.o 02-linkedlist-insert.o 02-linkedlist-insert-test.o 03-linkedlist-delete.o 03-linkedlist-delete-test.o 04-linkedlist-reverse.o 04-linkedlist-reverse-test.o 05-linkedlist-compare.o 05-linkedlist-compare-test.o 06-linkedlist-merge.o 06-linkedlist-merge-test.o 07-linkedlist-get.o 07-linkedlist-get-test.o 08-linkedlist-distinct.o 08-linkedlist-distinct-test.o 09-linkedlist-cycle-detection.o 09-linkedlist-cycle-detection-test.o 10-linkedlist-find-merge-point.o 10-linkedlist-find-merge-point-test.o 11-linkedlist-split.o 11-linkedlist-split-test.o 12-linkedlist-intersect.o 12-linkedlist-intersect-test.o 13-linkedlist-diff.o 13-linkedlist-diff-test.o 99-linkedlist-print.o 99-linkedlist-print-test.o main.o Test.o Util.o stdafx.o
+LINKOBJ  = 01-linkedlist-create.o 01-linkedlist-create-test.o 02-linkedlist-insert.o 02-linkedlist-insert-test.o 03-linkedlist-delete.o 03-linkedlist-delete-test.o 04-linkedlist-reverse.o 04-linkedlist-reverse-test.o 05-linkedlist-compare.o 05-linkedlist-compare-test.o 06-linkedlist-merge.o 06-linkedlist-merge-test.o 07-linkedlist-get.o 07-linkedlist-get-test.o 08-linkedlist-distinct.o 08-linkedlist-distinct-test.o 09-linkedlist-cycle-detection.o 09-linkedlist-cycle-detection-test.o 10-linkedlist-find-merge-point.o 10-linkedlist-find-merge-point-test.o 11-linkedlist-split.o 11-linkedlist-split-test.o 12-linkedlist-intersect.o 12-linkedlist-intersect-test.o 13-linkedlist-diff.o 13-linkedlist-diff-test.o 99-linkedlist-print.o 99-linkedlist-print-test.o main.o Test.o Util.o stdafx.o
+LIBS     = -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg
+INCS     = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = LinkedList.exe
+CXXFLAGS = $(CXXINCS) -pg
+CFLAGS   = $(INCS) -pg
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+01-linkedlist-create.o: 01-linkedlist-create.c
+	$(CC) -c 01-linkedlist-create.c -o 01-linkedlist-create.o $(CFLAGS)
+
+01-linkedlist-create-test.o: 01-linkedlist-create-test.c
+	$(CC) -c 01-linkedlist-create-test.c -o 01-linkedlist-create-test.o $(CFLAGS)
+
+02-linkedlist-insert.o: 02-linkedlist-insert.c
+	$(CC) -c 02-linkedlist-insert.c -o 02-linkedlist-insert.o $(CFLAGS)
+
+02-linkedlist-insert-test.o: 02-linkedlist-insert-test.c
+	$(CC) -c 02-linkedlist-insert-test.c -o 02-linkedlist-insert-test.o $(CFLAGS)
+
+03-linkedlist-delete.o: 03-linkedlist-delete.c
+	$(CC) -c 03-linkedlist-delete.c -o 03-linkedlist-delete.o $(CFLAGS)
+
+03-linkedlist-delete-test.o: 03-linkedlist-delete-test.c
+	$(CC) -c 03-linkedlist-delete-test.c -o 03-linkedlist-delete-test.o $(CFLAGS)
+
+04-linkedlist-reverse.o: 04-linkedlist-reverse.c
+	$(CC) -c 04-linkedlist-reverse.c -o 04-linkedlist-reverse.o $(CFLAGS)
+
+04-linkedlist-reverse-test.o: 04-linkedlist-reverse-test.c
+	$(CC) -c 04-linkedlist-reverse-test.c -o 04-linkedlist-reverse-test.o $(CFLAGS)
+
+05-linkedlist-compare.o: 05-linkedlist-compare.c
+	$(CC) -c 05-linkedlist-compare.c -o 05-linkedlist-compare.o $(CFLAGS)
+
+05-linkedlist-compare-test.o: 05-linkedlist-compare-test.c
+	$(CC) -c 05-linkedlist-compare-test.c -o 05-linkedlist-compare-test.o $(CFLAGS)
+
+06-linkedlist-merge.o: 06-linkedlist-merge.c
+	$(CC) -c 06-linkedlist-merge.c -o 06-linkedlist-merge.o $(CFLAGS)
+
+06-linkedlist-merge-test.o: 06-linkedlist-merge-test.c
+	$(CC) -c 06-linkedlist-merge-test.c -o 06-linkedlist-merge-test.o $(CFLAGS)
+
+07-linkedlist-get.o: 07-linkedlist-get.c
+	$(CC) -c 07-linkedlist-get.c -o 07-linkedlist-get.o $(CFLAGS)
+
+07-linkedlist-get-test.o: 07-linkedlist-get-test.c
+	$(CC) -c 07-linkedlist-get-test.c -o 07-linkedlist-get-test.o $(CFLAGS)
+
+08-linkedlist-distinct.o: 08-linkedlist-distinct.c
+	$(CC) -c 08-linkedlist-distinct.c -o 08-linkedlist-distinct.o $(CFLAGS)
+
+08-linkedlist-distinct-test.o: 08-linkedlist-distinct-test.c
+	$(CC) -c 08-linkedlist-distinct-test.c -o 08-linkedlist-distinct-test.o $(CFLAGS)
+
+09-linkedlist-cycle-detection.o: 09-linkedlist-cycle-detection.c
+	$(CC) -c 09-linkedlist-cycle-detection.c -o 09-linkedlist-cycle-detection.o $(CFLAGS)
+
+09-linkedlist-cycle-detection-test.o: 09-linkedlist-cycle-detection-test.c
+	$(CC) -c 09-linkedlist-cycle-detection-test.c -o 09-linkedlist-cycle-detection-test.o $(CFLAGS)
+
+10-linkedlist-find-merge-point.o: 10-linkedlist-find-merge-point.c
+	$(CC) -c 10-linkedlist-find-merge-point.c -o 10-linkedlist-find-merge-point.o $(CFLAGS)
+
+10-linkedlist-find-merge-point-test.o: 10-linkedlist-find-merge-point-test.c
+	$(CC) -c 10-linkedlist-find-merge-point-test.c -o 10-linkedlist-find-merge-point-test.o $(CFLAGS)
+
+11-linkedlist-split.o: 11-linkedlist-split.c
+	$(CC) -c 11-linkedlist-split.c -o 11-linkedlist-split.o $(CFLAGS)
+
+11-linkedlist-split-test.o: 11-linkedlist-split-test.c
+	$(CC) -c 11-linkedlist-split-test.c -o 11-linkedlist-split-test.o $(CFLAGS)
+
+12-linkedlist-intersect.o: 12-linkedlist-intersect.c
+	$(CC) -c 12-linkedlist-intersect.c -o 12-linkedlist-intersect.o $(CFLAGS)
+
+12-linkedlist-intersect-test.o: 12-linkedlist-intersect-test.c
+	$(CC) -c 12-linkedlist-intersect-test.c -o 12-linkedlist-intersect-test.o $(CFLAGS)
+
+13-linkedlist-diff.o: 13-linkedlist-diff.c
+	$(CC) -c 13-linkedlist-diff.c -o 13-linkedlist-diff.o $(CFLAGS)
+
+13-linkedlist-diff-test.o: 13-linkedlist-diff-test.c
+	$(CC) -c 13-linkedlist-diff-test.c -o 13-linkedlist-diff-test.o $(CFLAGS)
+
+99-linkedlist-print.o: 99-linkedlist-print.c
+	$(CC) -c 99-linkedlist-print.c -o 99-linkedlist-print.o $(CFLAGS)
+
+99-linkedlist-print-test.o: 99-linkedlist-print-test.c
+	$(CC) -c 99-linkedlist-print-test.c -o 99-linkedlist-print-test.o $(CFLAGS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+Test.o: Test.c
+	$(CC) -c Test.c -o Test.o $(CFLAGS)
+
+Util.o: Util.c
+	$(CC) -c Util.c -o Util.o $(CFLAGS)
+
+stdafx.o: stdafx.cpp
+	$(CC) -c stdafx.cpp -o stdafx.o $(CFLAGS)

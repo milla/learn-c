@@ -4,7 +4,7 @@
 
 void TestRemoveDuplicates() {
 	// case 1
-	int a1[] = { 3,3 };
+	int a1[] = { 3, 3 };
 	LinkList head1 = CreateByTail(a1, sizeof(a1) / IntSize);
 	head1 = RemoveDuplicates(head1);
 
@@ -12,7 +12,7 @@ void TestRemoveDuplicates() {
 	assert(GetLength(head1) == 1);
 
 	// case 2
-	int b1[] = { 2,3,3,4 };
+	int b1[] = { 2, 3, 3, 4 };
 	head1 = CreateByTail(b1, sizeof(b1) / IntSize);
 	head1 = RemoveDuplicates(head1);
 
@@ -26,7 +26,7 @@ void TestRemoveDuplicates() {
 
 void TestRemoveDuplicates2() {
 	// case 1
-	int a1[] = { 3,3 };
+	int a1[] = { 3, 3 };
 	LinkList head1 = CreateByTail(a1, sizeof(a1) / IntSize);
 	head1 = RemoveDuplicates2(head1);
 
@@ -34,7 +34,7 @@ void TestRemoveDuplicates2() {
 	assert(GetLength(head1) == 1);
 
 	// case 2
-	int b1[] = { 2,3,3,4 };
+	int b1[] = { 2, 3, 3, 4 };
 	head1 = CreateByTail(b1, sizeof(b1) / IntSize);
 	head1 = RemoveDuplicates2(head1);
 
