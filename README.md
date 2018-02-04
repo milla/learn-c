@@ -10,7 +10,8 @@ C语言及数据结构学习
 > 关于数据结构与算法的入门及学习，基于C语言
 
 ### Content
-- [Linked List](LinkedList/readme.md) [Dev C++ project](LinkedList/LinkeList.dev)
+- [Linked List](LinkedList/readme.md) 
+   - [Dev C++ project](LinkedList/LinkedList.dev)
 
 ### Problems
 - [LeetCode](https://leetcode.com/)
