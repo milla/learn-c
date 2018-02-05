@@ -2,11 +2,19 @@
 #include "LinkedList.h"
 #include <assert.h>
 
-void TestCreateByTailConsole() {
+void TestCreate(){
+	//TestCreateByTailConsole();
+	testCreateByHead();
+	testCreateByTailWithHead();
+	testCreateByTail();
+	testCreateCycleListByTail();
+}
+
+void testCreateByTailConsole() {
 	LinkList list1 = CreateByTailConsole();
 }
 
-void TestCreateByHead() {
+void testCreateByHead() {
 	int data[] = { 1 };
 	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
 	assert(GetNth(head, 0) == 1);
@@ -23,7 +31,7 @@ void TestCreateByHead() {
 	free(head);
 }
 
-void TestCreateByTailWithHead() {
+void testCreateByTailWithHead() {
 	int data[] = { 1 };
 	LinkList head = CreateByTailWithHead(data, sizeof(data) / IntSize);
 
@@ -41,7 +49,7 @@ void TestCreateByTailWithHead() {
 	free(head);
 }
 
-void TestCreateByTail() {
+void testCreateByTail() {
 	int data[] = { 1 };
 	LinkList head = CreateByTail(data, sizeof(data) / IntSize);
 
@@ -60,7 +68,7 @@ void TestCreateByTail() {
 	free(head);
 }
 
-void TestCreateCycleListByTail(){
+void testCreateCycleListByTail(){
 	int data[] = { 1 };
 	LinkList head = CreateCycleListByTail(data, sizeof(data) / IntSize);
 

@@ -1,58 +1,40 @@
 #include "LinkedList.h"
 
 /*0-linkedlist-create*/
-void TestCreateByTailConsole();
-void TestCreateByHead();
-void TestCreateByTailWithHead();
-void TestCreateByTail();
-void TestCreateCycleListByTail();
+void TestCreate();
 
 /*1-linkedlist-print*/
 void TestPrint();
 
 /*2-linkedlist-insert*/
-void TestInsertAtTail();
-void TestInsertAtHead();
-void TestInsertNth();
+void TestInsert();
 
 /*3-linkedlist-delete*/
-void TestDeleteNth();
+void TestDelete();
 
 /*4-linkedlist-reverse*/
-void TestReversePrint();
-void TestReverse	 ();
-void TestReverseList ();
-void TestSwitchNode	 ();
+void TestReverse();
 
 /*5-linkedlist-compare*/
-void TestCompareLists();
+void TestCompare();
 
 /*6-linkedlist-merge*/
-void TestMergeLists();
-void TestMergeLists2();
-void TestMergeTwoSorted();
+void TestMerge();
 
 /*7-linkedlist-get*/
-void TestGetNth();
-void TestGetNthFromTail();
-void TestGetLength();
+void TestGet();
 
 /*8-linkedlist-distinct*/
-void TestRemoveDuplicates ();
-void TestRemoveDuplicates2();
+void TestDistinct();
 
 /*9-linkedlist-cycle-detection*/
-void TestHasCycle ();
-void TestHasCycle2();
+void TestHasCycle();
 
 /*10-linkedlist-find-merge-point*/
-void TestFindMergeNode1();
-void TestFindMergeNode2();
-void TestFindMergeNode3();
-void TestFindMergeNode4();
+void TestFindMergeNode();
 
 /*11-linkedlist-split*/
-void TestSplitToEvenOdd();
+void TestSplit();
 
 /*12-linkedlist-intersect*/
 void TestIntersect();

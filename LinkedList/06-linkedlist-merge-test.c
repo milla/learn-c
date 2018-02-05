@@ -2,7 +2,13 @@
 #include "LinkedList.h"
 #include <assert.h>
 
-void TestMergeLists() {
+void TestMerge() {
+	testMergeLists();
+	testMergeLists2();
+	testMergeTwoSorted();
+}
+
+void testMergeLists() {
 	// case 1
 	int a1[] = { 1, 3, 4, 6, 9, 11 };
 	int a1L = sizeof(a1) / IntSize;
@@ -39,7 +45,7 @@ void TestMergeLists() {
 }
 
 
-void TestMergeTwoSorted() {
+void testMergeTwoSorted() {
 	// case 1
 	int a1[] = { 1, 3, 4, 6, 9, 11 };
 	int a1L = sizeof(a1) / IntSize;
@@ -74,7 +80,7 @@ void TestMergeTwoSorted() {
 	assert(GetNth(head1, 3) == 5);
 	assert(GetLength(head1) == b1L + b2L);
 }
-void TestMergeLists2() {
+void testMergeLists2() {
 	// case 1
 	int a1[] = { 1, 3, 4, 6, 9, 11 };
 	int a1L = sizeof(a1) / IntSize;

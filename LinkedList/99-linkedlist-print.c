@@ -15,6 +15,7 @@ struct Node *next;
 
 void Print(LinkList head) {
 	Node *p;
+	
 	if (head == NULL) {
 		printf("wrong input, or error");
 		return;
@@ -28,6 +29,7 @@ void Print(LinkList head) {
 		p = head->next;
 	}
 
+	printf("\n");
 	while (p != NULL) {
 		printf("%d\n", p->data);
 		p = p->next;

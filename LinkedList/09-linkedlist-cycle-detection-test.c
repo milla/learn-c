@@ -3,6 +3,11 @@
 #include <assert.h>
 
 void TestHasCycle() {
+	testHasCycle();
+	testHasCycle2();
+}
+
+void testHasCycle(){
 	int data[] = { 1, 2, 3 };
 	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
 	
@@ -19,7 +24,7 @@ void TestHasCycle() {
 	free(head);
 }
 
-void TestHasCycle2() {
+void testHasCycle2() {
 	int data[] = { 1, 2, 3 };
 	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
 	

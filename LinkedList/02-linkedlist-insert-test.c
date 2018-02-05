@@ -2,7 +2,13 @@
 #include "LinkedList.h"
 #include <assert.h>
 
-void TestInsertAtTail() {
+void TestInsert(){
+	testInsertAtTail();
+	testInsertAtHead();
+	testInsertNth();
+}
+
+void testInsertAtTail() {
 	int data[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int len = sizeof(data) / IntSize;
 	LinkList head = CreateByTail(data, len);
@@ -16,7 +22,7 @@ void TestInsertAtTail() {
 	free(head);
 }
 
-void TestInsertAtHead() {
+void testInsertAtHead() {
 	int data[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int len = sizeof(data) / IntSize;
 	LinkList head = CreateByTail(data, len);
@@ -30,7 +36,7 @@ void TestInsertAtHead() {
 	free(head);
 }
 
-void TestInsertNth() {
+void testInsertNth() {
 	int data[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int len = sizeof(data) / IntSize;
 	LinkList head = CreateByTail(data, len);

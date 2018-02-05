@@ -24,9 +24,18 @@ Node * Intersect(Node *heada, Node *headb) {
 		}
 	}
 
-	p->next	= NULL;
+	p->next = NULL;
 	Node *f = dummy->next;
 	dummy->next = NULL;
 	free(dummy);
 	return f;
+}
+
+Node *Intersect2(Node *headA, Node *headB) {
+	Node *ptrA = headA, *ptrB = headB;
+	while (ptrA != ptrB) {
+		ptrA = ptrA ? ptrA->next : headB;
+		ptrB = ptrB ? ptrB->next : headA;
+	}
+	return ptrA;
 }

@@ -19,6 +19,8 @@ Node* InsertNth(Node *head, int data, int position);
 
 /*3-linkedlist-delete*/
 Node* DeleteNth(Node *head, int position);
+Node* Delete(Node* head, int val);
+Node* RemoveNthFromEnd(Node* head, int n);
 
 /*4-linkedlist-reverse*/
 void ReversePrint(Node *head);
@@ -55,7 +57,8 @@ int FindMergeNode4(Node *headA, Node *headB);
 
 /*11-linkedlist-split*/
 LinkList SplitToEvenOdd(LinkList head);
-
+Node** SplitListToParts(Node* root, int k, int* returnSize) ;
+ 
 /*12-linkedlist-intersect*/
 Node* Intersect(Node *heada, Node *headb);
 

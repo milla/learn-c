@@ -2,7 +2,14 @@
 #include "LinkedList.h"
 #include <assert.h>
 
-void TestReversePrint() {
+void TestReverse() {
+	testReversePrint();
+	testReverse();
+	testReverseList();
+	testSwitchNode();
+}
+
+void testReversePrint() {
 	int data[] = { 1, 2, 3 };
 	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
 	Print(head);
@@ -16,7 +23,7 @@ void TestReversePrint() {
 	free(head);
 }
 
-void TestReverse() {
+void testReverse() {
 	// case 1
 	int data[] = { 1, 2, 3 };
 	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
@@ -43,7 +50,7 @@ void TestReverse() {
 	free(head);
 }
 
-void TestReverseList() {
+void testReverseList() {
 	// case 1
 	int data[] = { 1, 2, 3 };
 	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
@@ -70,7 +77,7 @@ void TestReverseList() {
 	free(head);
 }
 
-void TestSwitchNode() {
+void testSwitchNode() {
 	// case 1
 	int data[] = { 1, 2, 3, 4, 5 };
 	int len = sizeof(data) / IntSize;

@@ -2,7 +2,11 @@
 #include "LinkedList.h"
 #include <assert.h>
 
-void TestCompareLists() {
+void TestCompare() {
+	testCompareLists();
+}
+
+void testCompareLists() {
 	// case 2
 	int data1[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	LinkList head1 = CreateByHead(data1, sizeof(data1) / IntSize);

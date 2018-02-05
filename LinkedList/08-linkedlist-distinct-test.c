@@ -2,7 +2,12 @@
 #include "LinkedList.h"
 #include <assert.h>
 
-void TestRemoveDuplicates() {
+void TestDistinct() {
+	testRemoveDuplicates();
+	testRemoveDuplicates2();
+}
+
+void testRemoveDuplicates() {
 	// case 1
 	int a1[] = { 3, 3 };
 	LinkList head1 = CreateByTail(a1, sizeof(a1) / IntSize);
@@ -24,7 +29,7 @@ void TestRemoveDuplicates() {
 	free(head1);
 }
 
-void TestRemoveDuplicates2() {
+void testRemoveDuplicates2() {
 	// case 1
 	int a1[] = { 3, 3 };
 	LinkList head1 = CreateByTail(a1, sizeof(a1) / IntSize);

@@ -5,56 +5,40 @@
 void Test() {
 
 	/*0-linkedlist-create*/
-	//TestCreateByTailConsole();
-	TestCreateByHead();
-	TestCreateByTailWithHead();
-	TestCreateByTail();
-	TestCreateCycleListByTail();
+	TestCreate();
 
 	/*1-linkedlist-print*/
 	TestPrint();
 
 	/*2-linkedlist-insert*/
-	TestInsertAtTail();
-	TestInsertAtHead();
-	TestInsertNth();
+	TestInsert();
 
 	/*3-linkedlist-delete*/
-	TestDeleteNth();
+	TestDelete();
 
 	/*4-linkedlist-reverse*/
-	TestReversePrint();
 	TestReverse();
-	TestReverseList();
-	TestSwitchNode();
 
 	/*5-linkedlist-compare*/
-	TestCompareLists();
+	TestCompare();
 
 	/*6-linkedlist-merge*/
-	TestMergeLists();
-	TestMergeLists2();
-	TestMergeTwoSorted();
+	TestMerge();
 
 	/*7-linkedlist-get*/
-	TestGetNthFromTail();
+	TestGet();
 
 	/*8-linkedlist-distinct*/
-	TestRemoveDuplicates();
-	TestRemoveDuplicates2();
+	TestDistinct();
 
 	/*9-linkedlist-cycle-detection*/
 	TestHasCycle();
-	TestHasCycle2();
 
 	/*10-linkedlist-find-merge-point*/
-	TestFindMergeNode1();
-	TestFindMergeNode2();
-	TestFindMergeNode3();
-	TestFindMergeNode4();
+	TestFindMergeNode();
 	
 	/*11-linkedlist-split*/
-	TestSplitToEvenOdd();
+	TestSplit();
 
 	/*12-linkedlist-intersect*/
 	TestIntersect();

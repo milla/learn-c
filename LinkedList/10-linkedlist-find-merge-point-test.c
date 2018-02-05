@@ -2,7 +2,14 @@
 #include "LinkedList.h"
 #include <assert.h>
 
-void TestFindMergeNode1() {
+void TestFindMergeNode() {
+	testFindMergeNode1();
+	testFindMergeNode2();
+	testFindMergeNode3();
+	testFindMergeNode4();
+}
+
+void testFindMergeNode1() {
 
 	int m = 0;
 
@@ -46,7 +53,7 @@ void TestFindMergeNode1() {
 	free(head1);
 	free(head2);
 }
-void TestFindMergeNode2() {
+void testFindMergeNode2() {
 	int m = 0;
 
 	// case 1
@@ -89,7 +96,7 @@ void TestFindMergeNode2() {
 	free(head2);
 }
 
-void TestFindMergeNode3() {
+void testFindMergeNode3() {
 	int m = 0;
 
 	// case 1
@@ -133,7 +140,7 @@ void TestFindMergeNode3() {
 	free(head2);
 }
 
-void TestFindMergeNode4() {	
+void testFindMergeNode4() {	
 
 	int m = 0;
 
