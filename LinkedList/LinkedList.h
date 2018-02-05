@@ -64,15 +64,3 @@ Node* Intersect(Node *heada, Node *headb);
 
 /*13-linkedlist-diff*/
 Node* Diff(Node *heada, Node *headb);
-
-
-
-
-
-
-
-
-
-
-
-

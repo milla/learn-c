@@ -6,10 +6,10 @@
 #include <string.h>
 #include <limits.h>
 #include <stdbool.h>
-#include "Test.h"
+#include "LinkedListTest.h"
 
 int main() {
-	Test();
+	LinkedListTest();
 	getchar();
 	return 0;
 }

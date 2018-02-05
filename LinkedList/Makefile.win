@@ -4,11 +4,11 @@
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = 01-linkedlist-create.o 01-linkedlist-create-test.o 02-linkedlist-insert.o 02-linkedlist-insert-test.o 03-linkedlist-delete.o 03-linkedlist-delete-test.o 04-linkedlist-reverse.o 04-linkedlist-reverse-test.o 05-linkedlist-compare.o 05-linkedlist-compare-test.o 06-linkedlist-merge.o 06-linkedlist-merge-test.o 07-linkedlist-get.o 07-linkedlist-get-test.o 08-linkedlist-distinct.o 08-linkedlist-distinct-test.o 09-linkedlist-cycle-detection.o 09-linkedlist-cycle-detection-test.o 10-linkedlist-find-merge-point.o 10-linkedlist-find-merge-point-test.o 11-linkedlist-split.o 11-linkedlist-split-test.o 12-linkedlist-intersect.o 12-linkedlist-intersect-test.o 13-linkedlist-diff.o 13-linkedlist-diff-test.o 99-linkedlist-print.o 99-linkedlist-print-test.o main.o Test.o stdafx.o
-LINKOBJ  = 01-linkedlist-create.o 01-linkedlist-create-test.o 02-linkedlist-insert.o 02-linkedlist-insert-test.o 03-linkedlist-delete.o 03-linkedlist-delete-test.o 04-linkedlist-reverse.o 04-linkedlist-reverse-test.o 05-linkedlist-compare.o 05-linkedlist-compare-test.o 06-linkedlist-merge.o 06-linkedlist-merge-test.o 07-linkedlist-get.o 07-linkedlist-get-test.o 08-linkedlist-distinct.o 08-linkedlist-distinct-test.o 09-linkedlist-cycle-detection.o 09-linkedlist-cycle-detection-test.o 10-linkedlist-find-merge-point.o 10-linkedlist-find-merge-point-test.o 11-linkedlist-split.o 11-linkedlist-split-test.o 12-linkedlist-intersect.o 12-linkedlist-intersect-test.o 13-linkedlist-diff.o 13-linkedlist-diff-test.o 99-linkedlist-print.o 99-linkedlist-print-test.o main.o Test.o stdafx.o
-LIBS     = -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg -g3
-INCS     = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
-CXXINCS  = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+OBJ      = 01-linkedlist-create.o 01-linkedlist-create-test.o 02-linkedlist-insert.o 02-linkedlist-insert-test.o 03-linkedlist-delete.o 03-linkedlist-delete-test.o 04-linkedlist-reverse.o 04-linkedlist-reverse-test.o 05-linkedlist-compare.o 05-linkedlist-compare-test.o 06-linkedlist-merge.o 06-linkedlist-merge-test.o 07-linkedlist-get.o 07-linkedlist-get-test.o 08-linkedlist-distinct.o 08-linkedlist-distinct-test.o 09-linkedlist-cycle-detection.o 09-linkedlist-cycle-detection-test.o 10-linkedlist-find-merge-point.o 10-linkedlist-find-merge-point-test.o 11-linkedlist-split.o 11-linkedlist-split-test.o 12-linkedlist-intersect.o 12-linkedlist-intersect-test.o 13-linkedlist-diff.o 13-linkedlist-diff-test.o 99-linkedlist-print.o 99-linkedlist-print-test.o main.o stdafx.o
+LINKOBJ  = 01-linkedlist-create.o 01-linkedlist-create-test.o 02-linkedlist-insert.o 02-linkedlist-insert-test.o 03-linkedlist-delete.o 03-linkedlist-delete-test.o 04-linkedlist-reverse.o 04-linkedlist-reverse-test.o 05-linkedlist-compare.o 05-linkedlist-compare-test.o 06-linkedlist-merge.o 06-linkedlist-merge-test.o 07-linkedlist-get.o 07-linkedlist-get-test.o 08-linkedlist-distinct.o 08-linkedlist-distinct-test.o 09-linkedlist-cycle-detection.o 09-linkedlist-cycle-detection-test.o 10-linkedlist-find-merge-point.o 10-linkedlist-find-merge-point-test.o 11-linkedlist-split.o 11-linkedlist-split-test.o 12-linkedlist-intersect.o 12-linkedlist-intersect-test.o 13-linkedlist-diff.o 13-linkedlist-diff-test.o 99-linkedlist-print.o 99-linkedlist-print-test.o main.o stdafx.o
+LIBS     = -L"d:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"d:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg -g3
+INCS     = -I"d:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"d:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"d:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"d:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"d:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"d:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"d:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = LinkedList.exe
 CXXFLAGS = $(CXXINCS) -pg -g3
 CFLAGS   = $(INCS) -pg -g3
@@ -110,9 +110,6 @@ $(BIN): $(OBJ)
 
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
-
-Test.o: Test.c
-	$(CC) -c Test.c -o Test.o $(CFLAGS)
 
 stdafx.o: stdafx.cpp
 	$(CC) -c stdafx.cpp -o stdafx.o $(CFLAGS)

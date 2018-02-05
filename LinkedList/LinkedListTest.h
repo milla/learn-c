@@ -1,43 +1,46 @@
 #include "LinkedList.h"
 
-/*0-linkedlist-create*/
-void TestCreate();
+void LinkedListTest(){
+	/*0-linkedlist-create*/
+	TestCreate();
 
-/*1-linkedlist-print*/
-void TestPrint();
+	/*1-linkedlist-print*/
+	TestPrint();
 
-/*2-linkedlist-insert*/
-void TestInsert();
+	/*2-linkedlist-insert*/
+	TestInsert();
 
-/*3-linkedlist-delete*/
-void TestDelete();
+	/*3-linkedlist-delete*/
+	TestDelete();
 
-/*4-linkedlist-reverse*/
-void TestReverse();
+	/*4-linkedlist-reverse*/
+	TestReverse();
 
-/*5-linkedlist-compare*/
-void TestCompare();
+	/*5-linkedlist-compare*/
+	TestCompare();
 
-/*6-linkedlist-merge*/
-void TestMerge();
+	/*6-linkedlist-merge*/
+	TestMerge();
 
-/*7-linkedlist-get*/
-void TestGet();
+	/*7-linkedlist-get*/
+	TestGet();
 
-/*8-linkedlist-distinct*/
-void TestDistinct();
+	/*8-linkedlist-distinct*/
+	TestDistinct();
 
-/*9-linkedlist-cycle-detection*/
-void TestHasCycle();
+	/*9-linkedlist-cycle-detection*/
+	TestHasCycle();
 
-/*10-linkedlist-find-merge-point*/
-void TestFindMergeNode();
+	/*10-linkedlist-find-merge-point*/
+	TestFindMergeNode();
+	
+	/*11-linkedlist-split*/
+	TestSplit();
 
-/*11-linkedlist-split*/
-void TestSplit();
+	/*12-linkedlist-intersect*/
+	TestIntersect();
 
-/*12-linkedlist-intersect*/
-void TestIntersect();
+	/*13-linkedlist-diff*/
+	TestDiff();
+}
 
-/*13-linkedlist-diff*/
-void TestDiff();
