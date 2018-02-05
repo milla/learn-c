@@ -79,3 +79,19 @@ int GetNth(Node *head, int position)
 
 	return p ? p->data : NullInt;
 }
+
+Dnode* GetNthDnode(Dnode *head, int position)
+{
+	if (!head) return NULL;
+	int j = 0;
+	Dnode *p;
+	Dnode *n;
+	p = head;
+
+	while (p && j < position) {
+		p = p->next;
+		j++;
+	}
+
+	return p;
+}

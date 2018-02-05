@@ -117,3 +117,28 @@ Node * SwitchNode(Node *head, Node * t) {
 
 	return dummy->next;
 }
+
+// https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem
+Dnode * ReverseDoublyList(Dnode *head){
+	if (!head) return head;
+	
+	// Complete this function
+    // Do not write the main method. 
+    Dnode *q, *p, *r; // sequence by link: q - p - r
+    q = head; 
+	p = q->next;
+	
+	q->next = NULL;
+	
+    while (q && p){
+    	r = p->next;
+		
+		p->next = q;	
+		p->prev = r;
+		
+		q = p;
+		p = r;
+	}
+    
+    return q;
+}

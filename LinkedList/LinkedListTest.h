@@ -42,5 +42,8 @@ void LinkedListTest(){
 
 	/*13-linkedlist-diff*/
 	TestDiff();
+	
+	/*14*/
+	TestAddTwoNumbers();
 }
 

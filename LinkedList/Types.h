@@ -9,5 +9,16 @@ typedef struct Node {
 	int data;
 } Node;
 
+typedef struct dnode {
+	struct dnode* next;
+	struct dnode* prev;
+	int data;
+} Dnode;
+
 typedef Node *LinkList;
+
+struct ListNode {
+    int val;
+      struct ListNode *next;
+ };
 #pragma once

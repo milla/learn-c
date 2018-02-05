@@ -103,3 +103,27 @@ LinkList CreateCycleListByTail(int input[], int len) {
 	return head;
 }
 
+Dnode* CreateDoublyList(int input[], int len){
+	Dnode *head, *fast, *slow;
+	head = (Dnode *)malloc(sizeof(Dnode));
+	slow = head;
+	
+	
+	slow->data = input[0];
+	slow->next = NULL;
+	slow->prev = NULL;	
+	
+	int i;
+	for (i = 1;i < len;i++) {
+		slow->next = fast = (Dnode *)malloc(sizeof(Dnode));
+		fast->data = input[i];
+	
+		fast->prev = slow;
+		slow = slow->next;		
+	}
+	
+	fast->next = NULL;
+	
+	return head;
+}
+

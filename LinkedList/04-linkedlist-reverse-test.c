@@ -7,6 +7,7 @@ void TestReverse() {
 	testReverse();
 	testReverseList();
 	testSwitchNode();
+	testReverseDoublyList();
 }
 
 void testReversePrint() {
@@ -98,3 +99,38 @@ void testSwitchNode() {
 
 	free(head);
 }
+
+void testReverseDoublyList(){
+	int data[] = { 1, 2, 3 };
+	Dnode *head = CreateDoublyList(data, sizeof(data) / IntSize);
+	
+	head = ReverseDoublyList(head);
+	
+	Dnode *n = GetNthDnode(head,0);
+	
+	assert(n->data == 3);
+	assert(n->prev == NULL);
+	assert(n->next->data == 2);
+	assert(n->next->prev->data == 3);
+	assert(n->next->next->data == 1);
+	assert(GetNthDnode(head,1)->data == 2);
+	assert(GetNthDnode(head,2)->data == 1);
+	
+	int data2[] = { 1, 2 };
+	head = CreateDoublyList(data2, sizeof(data2) / IntSize);
+	
+	head = ReverseDoublyList(head);
+	
+	assert(GetNthDnode(head,0)->data == 2);
+	assert(GetNthDnode(head,1)->data == 1);
+	
+	int data3[] = { 1 };
+	head = CreateDoublyList(data3, sizeof(data3) / IntSize);
+	
+	head = ReverseDoublyList(head);
+	
+	assert(GetNthDnode(head,0)->data == 1);
+	
+	free(head);
+}
+

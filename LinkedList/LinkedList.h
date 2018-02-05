@@ -8,6 +8,7 @@ LinkList CreateByHead(int data[], int len);
 LinkList CreateByTailWithHead(int input[], int len);
 LinkList CreateByTail(int input[], int len);
 LinkList CreateCycleListByTail(int input[], int len);
+Dnode* GetNthDnode(Dnode *head, int position);
 
 /*1-linkedlist-print*/
 void Print(LinkList head);
@@ -27,6 +28,7 @@ void ReversePrint(Node *head);
 Node* Reverse(Node *head);
 Node* ReverseList(Node *head);
 Node* SwitchNode(Node *head, Node * t);
+Dnode * ReverseDoublyList(Dnode *head);
 
 /*5-linkedlist-compare*/
 int CompareLists(Node *headA, Node* headB);
@@ -64,3 +66,6 @@ Node* Intersect(Node *heada, Node *headb);
 
 /*13-linkedlist-diff*/
 Node* Diff(Node *heada, Node *headb);
+
+/*14-*/
+Node* AddTwoNumbers(Node *l1, Node *l2);
