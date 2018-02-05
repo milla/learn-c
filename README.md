@@ -10,15 +10,16 @@ C语言及数据结构学习
 > 关于数据结构与算法的入门及学习，基于C语言
 
 ### Content
-- [Linked List](LinkedList/readme.md)
+- [Linked List](LinkedList/readme.md) 
+   - [Dev C++ project](LinkedList/LinkedList.dev)
 
 ### Problems
 - [LeetCode](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
 - 部分题目来源于书籍
 
-### 使用的IDE
-- Visual Studio 2017, on Windows 10  
+### Tool
+- [Dev C++](https://sourceforge.net/projects/orwelldevcpp/), GNC. Windows 10
 - ___ on MacOS
 
 
