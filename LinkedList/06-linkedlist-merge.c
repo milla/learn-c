@@ -62,6 +62,7 @@ LinkList MergeTwoSorted(LinkList heada, LinkList headb) {
 	bPtr = headb;
 	Node *dummy;
 	Node *p;
+	
 	p = dummy = (Node*)malloc(sizeof(Node));
 	
 	while (aPtr != NULL && bPtr != NULL) {
@@ -93,4 +94,45 @@ Node* MergeLists2(Node* l1, Node* l2) {
 		l2->next = MergeLists2(l1, l2->next);
 		return l2;
 	}
+}
+
+Node* mergeTwoLists(Node* p1, Node* p2) {
+    if (!p1) return p2;
+    if (!p2) return p1;
+    
+    Node *head = (Node *)malloc(sizeof(Node));
+    Node *p = head;
+       
+	while (p1 && p2){
+        if (p1->data <= p2->data){
+            p->next = p1;
+            p1 = p1->next;
+        }else{
+            p->next = p2;
+            p2 = p2->next;
+        }
+        p = p->next;
+    }
+    
+    p->next = p1 ? p1 : p2;
+    return head->next;
+}
+
+// https://leetcode.com/problems/merge-k-sorted-lists/description/ LeetCode #23
+Node* MergeKLists(Node** lists, int listsSize) {
+    if (listsSize <= 0) return NULL;
+    if (listsSize <= 1) return lists[0];
+    int i = 0;
+    
+    // 13 ms
+    int interval = 1;
+    // enhance in pairs, to shorten length of list: https://leetcode.com/problems/merge-k-sorted-lists/solution/     	
+	while (interval < listsSize){
+    	for (i = 0; i < listsSize - interval; i = i + interval*2){
+    		lists[i] = mergeTwoLists(lists[i], lists[i + interval]);        	
+		}
+		interval*=2;    	
+    }
+    
+    return lists[0];    
 }

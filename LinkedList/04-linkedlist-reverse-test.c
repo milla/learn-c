@@ -2,14 +2,6 @@
 #include "LinkedList.h"
 #include <assert.h>
 
-void TestReverse() {
-	testReversePrint();
-	testReverse();
-	testReverseList();
-	testSwitchNode();
-	testReverseDoublyList();
-}
-
 void testReversePrint() {
 	int data[] = { 1, 2, 3 };
 	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
@@ -134,3 +126,44 @@ void testReverseDoublyList(){
 	free(head);
 }
 
+void testSwapPairs(){
+	// case 1
+	int data[] = { 1, 2, 3, 4, 5 };
+	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
+	
+	head = SwapPairs(head);
+	Print(head);
+	
+	assert(GetNth(head,0)==2);
+	assert(GetNth(head,1)==1);	
+	assert(GetNth(head,2)==4);	
+	assert(GetNth(head,3)==3);	
+	assert(GetNth(head,4)==5);		
+	assert(GetLength(head)==5);
+	
+	// case 2
+	int data2[] = { 1 };
+	head = CreateByHead(data, sizeof(data2) / IntSize);
+	
+	head = SwapPairs(head);
+	
+	assert(GetNth(head,0)==1);
+	assert(GetLength(head)==1);
+	
+	free(head);	
+}
+
+
+
+// 
+
+
+
+void TestReverse() {
+	testReversePrint();
+	testReverse();
+	testReverseList();
+	testSwitchNode();
+	testReverseDoublyList();
+	testSwapPairs();
+}

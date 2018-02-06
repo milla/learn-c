@@ -49,12 +49,12 @@ Node* DeleteNth(Node *head, int position)
 /**
 https://leetcode.com/problems/delete-node-in-a-linked-list/description/
 * Definition for singly-linked list.
-* struct ListNode {
+* Node {
 *     int val;
-*     struct ListNode *next;
+*     Node *next;
 * };
 */
-void deleteNode(struct ListNode* node)
+void deleteNode(Node* node)
 {
 	if (!node) exit(1);
 
@@ -63,9 +63,9 @@ void deleteNode(struct ListNode* node)
 
 /**
 * Definition for singly-linked list.
-* struct ListNode {
+* Node {
 *     int val;
-*     struct ListNode *next;
+*     Node *next;
 * };
 */
 Node* Delete(Node* head, int val)

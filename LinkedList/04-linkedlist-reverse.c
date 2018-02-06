@@ -142,3 +142,39 @@ Dnode * ReverseDoublyList(Dnode *head){
     
     return q;
 }
+
+
+Node *swap(Node *p){
+	if (!p || !p->next) return p;
+	
+	Node *q = p->next;
+	p->next = NULL;
+	
+	q->next = p;
+	
+	return p;
+}
+
+// https://leetcode.com/problems/swap-nodes-in-pairs/description/ LeetCode #24
+Node *SwapPairs(Node *head){
+	if (!head || !head->next) return head;
+	
+	int pair = 0;
+	Node *t, *q, *p, *dummy;
+	p = head;
+	dummy = (Node*)malloc(sizeof(Node));
+	t = dummy;
+	
+	while (p && p->next){
+		q = p->next->next;
+		t->next = p->next;		
+		p = swap(p);		
+		t = p;
+		p->next = q;
+		p = p->next;
+		
+		if (!q) break;
+	}
+	
+	return dummy->next;
+}

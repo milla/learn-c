@@ -6,6 +6,7 @@ void TestMerge() {
 	testMergeLists();
 	testMergeLists2();
 	testMergeTwoSorted();
+	testMergeKLists();
 }
 
 void testMergeLists() {
@@ -114,4 +115,20 @@ void testMergeLists2() {
 	assert(GetNth(head1, 2) == 4);
 	assert(GetNth(head1, 3) == 5);
 	assert(GetLength(head1) == b1L + b2L);
+}
+
+void testMergeKLists(){
+	// case 1
+	int a1[] = { 1, 3, 5 };  			LinkList head1 = CreateByTail(a1, sizeof(a1) / IntSize);
+	int a2[] = { 2, 4, 6}; 				LinkList head2 = CreateByTail(a2, sizeof(a2) / IntSize);
+	int a3[] = { 1, 2, 4, 5, 10 };		LinkList head3 = CreateByTail(a3, sizeof(a3) / IntSize);
+	int a4[] = { 12 };					LinkList head4 = CreateByTail(a4, sizeof(a4) / IntSize);
+	
+	Node** list[4];
+	list[0] = head1; list[1] = head2; list[2] = head3; list[3] = head4; 
+	
+	Node * merged = MergeKLists(list, 4);
+	assert(GetLength(merged) == 12);
+	assert(GetNth(merged,11) == 12);
+	assert(GetNth(merged,10) == 10);
 }

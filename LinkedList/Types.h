@@ -19,6 +19,6 @@ typedef Node *LinkList;
 
 struct ListNode {
     int val;
-      struct ListNode *next;
+    struct ListNode *next;
  };
 #pragma once

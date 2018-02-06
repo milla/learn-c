@@ -29,6 +29,7 @@ Node* Reverse(Node *head);
 Node* ReverseList(Node *head);
 Node* SwitchNode(Node *head, Node * t);
 Dnode * ReverseDoublyList(Dnode *head);
+Node *SwapPairs(Node *head);
 
 /*5-linkedlist-compare*/
 int CompareLists(Node *headA, Node* headB);
@@ -37,6 +38,8 @@ int CompareLists(Node *headA, Node* headB);
 Node* MergeLists(Node *headA, Node* headB);
 Node* MergeLists2(Node *headA, Node* headB);
 LinkList MergeTwoSorted(LinkList heada, LinkList headb);
+Node* MergeKLists(Node** lists, int listsSize) ;
+
 
 /*7-linkedlist-get*/
 int GetNthFromTail(Node *head, int positionFromTail);
