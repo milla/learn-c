@@ -132,7 +132,6 @@ void testSwapPairs(){
 	LinkList head = CreateByHead(data, sizeof(data) / IntSize);
 	
 	head = SwapPairs(head);
-	Print(head);
 	
 	assert(GetNth(head,0)==2);
 	assert(GetNth(head,1)==1);	
