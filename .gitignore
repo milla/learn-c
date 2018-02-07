@@ -61,3 +61,5 @@ dkms.conf
 /LinkedList/Debug
 /LinkedList/LinkedList.layout
 /Stack/Makefile.win
+/Stack/ListStack/Makefile.win
+/Stack/Stack/Makefile.win

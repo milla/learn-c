@@ -5,13 +5,11 @@
 typedef char ValueType;
 typedef struct Node {
 	struct Node *next;
-	int data;
+	ValueType data;
 } Node;
 
-typedef struct SequentialStack {
+typedef struct Stack {
 	int size;
 	int top;
 	ValueType data[STACK_SIZE];
 } Stack;
-
-typedef Node * LLStack;	

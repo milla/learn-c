@@ -49,7 +49,7 @@ ValueType Pop(Stack *s){
 	return top;
 }
 
-void Dispose(Stack *s){
+void Clear(Stack *s){
 	if (!s) {}
 	else if (IsEmpty(s))  {}
 	else{
@@ -67,6 +67,6 @@ void Test01(){
 	Push(&s, 2);
 	Push(&s, 3);
 	ValueType top = Pop(&s);
-	Dispose(&s);
+	Clear(&s);
 	assert(top == 3);
 }

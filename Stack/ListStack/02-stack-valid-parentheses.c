@@ -12,42 +12,22 @@ bool IsValid(char* s) {
     int i = 0;
     char *c;
     Stack stack; 
-    InitStack(&stack);
+    stack = InitStack(stack);
+    ValueType top; ValueType *t = &(top);
     
 	while ((c = s[i]) != 0){
     	if (c == '(' || c == '[' || c == '{'){
-			Push(&stack, c);     		
+			stack = Push(stack, c);     		
 		}
 		else if (c == ')' || c == ']' || c == '}'){
-			if (IsEmpty(&stack) || GetTop(&stack) != getPair(c)) return false;
-			else Pop(&stack);
+			if (IsEmpty(stack) || Peek(stack) != getPair(c)) return false;
+			else stack = Pop(stack, t);
 		}		
 		i++;
 	}
 	
-	return IsEmpty(&stack);
+	return IsEmpty(stack);
 }
-
-bool IsValid2(char* s) {
-    int i = 0;
-    char *c;
-    LLStack stack; 
-    InitStack(&stack);
-    
-	while ((c = s[i]) != 0){
-    	if (c == '(' || c == '[' || c == '{'){
-			Push(&stack, c);     		
-		}
-		else if (c == ')' || c == ']' || c == '}'){
-			if (IsEmpty(&stack) || GetTop(&stack) != getPair(c)) return false;
-			else Pop(&stack);
-		}		
-		i++;
-	}
-	
-	return IsEmpty(&stack);
-}
-
 
 void Test02(){
 	assert(IsValid("test( [] )"));	
